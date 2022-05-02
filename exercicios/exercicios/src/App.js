@@ -1,7 +1,18 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { View } from 'react-native'
 
-export default () => { //retorna por jsx - sempre precisa do modulo React pra retornar jsx
+import C1 from './components/Primeiro'
+import CompOriginal, { Comp1, Comp2 } from './components/Multi'
+
+export default () => (
+    //retorna por jsx - sempre precisa do modulo React pra retornar jsx
     //também podemos exportar como arrow function
-    return <Text>Primeiro Componente!</Text>
-}
+    <View>
+        <C1>
+        </C1>
+        <Comp1></Comp1>
+        <Comp2></Comp2>
+        <CompOriginal></CompOriginal>
+    </View>
+
+)
