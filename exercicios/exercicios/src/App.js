@@ -8,7 +8,8 @@ import { View, StyleSheet } from 'react-native'
 // import Botao from './components/Botao'
 // import Contador from './components/Contador'
 // import Pai from './components/indireta/Pai'
-import ContadorV2 from './components/contador/ContadorV2'
+// import ContadorV2 from './components/contador/ContadorV2'
+import Diferenciar from './components/Diferenciar'
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
@@ -26,8 +27,9 @@ export default () => (
         <Contador initial={100} step={30}/>
         <Contador />
         <Pai/>
-        />*/}
         <ContadorV2/>
+        />*/}
+        <Diferenciar/>
    </View>
 
 )
