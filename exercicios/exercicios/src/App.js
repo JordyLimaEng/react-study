@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, SafeAreaView } from 'react-native'
-import ListaProdutos from './components/produtos/ListaProdutos'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 import UsuarioLogado from './components/UsuarioLogado'
 
 
@@ -8,7 +8,7 @@ export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
     //também podemos exportar como arrow function
     <SafeAreaView style={style.App}>
-        <ListaProdutos/>
+        <ListaProdutosV2/>
     </SafeAreaView>
 
 )
