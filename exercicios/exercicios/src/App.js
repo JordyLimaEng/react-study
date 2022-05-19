@@ -1,24 +1,18 @@
 import React from 'react'
 import { StyleSheet, SafeAreaView } from 'react-native'
+import UsuarioLogado from './components/UsuarioLogado'
 
-import Familia from './components/relacao/Familia'
-import Membro from './components/relacao/Membro'
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
     //também podemos exportar como arrow function
     <SafeAreaView style={style.App}>
-        <Familia>
-            <Membro nome='Bia' sobrenome='Arruda'/>
-            <Membro nome='Bernardo' sobrenome='Arruda'/>
-        </Familia>
-        <Familia>
-            <Membro nome='Ana' sobrenome='Silva'/>
-            <Membro nome='Arnaldo' sobrenome='Silva'/>
-            <Membro nome='Gui' sobrenome='Silva'/>            
-            <Membro nome='Rebeca' sobrenome='Silva'/>
-        </Familia>
-   </SafeAreaView>
+        <UsuarioLogado usuario={ {nome: 'Gui', email: 'Gui@gui.com'} } />
+        <UsuarioLogado usuario={ {nome: 'Gui'} } />
+        <UsuarioLogado usuario={ {email: 'Gui@gui.com'} } />
+        <UsuarioLogado usuario={null} />
+        <UsuarioLogado />
+    </SafeAreaView>
 
 )
 
