@@ -1,14 +1,13 @@
 import React from 'react'
 import { StyleSheet, SafeAreaView } from 'react-native'
-import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
-import UsuarioLogado from './components/UsuarioLogado'
+import DigiteSeuNome from './components/DigiteSeuNome'
 
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
     //também podemos exportar como arrow function
     <SafeAreaView style={style.App}>
-        <ListaProdutosV2/>
+        <DigiteSeuNome/>
     </SafeAreaView>
 
 )
