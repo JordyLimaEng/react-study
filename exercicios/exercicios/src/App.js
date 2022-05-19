@@ -7,6 +7,7 @@ import { View, StyleSheet } from 'react-native'
 // import Titulo from './components/Titulo'
 import Botao from './components/Botao'
 import Contador from './components/Contador'
+import Pai from './components/direta/Pai'
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
@@ -21,9 +22,10 @@ export default () => (
         <Titulo principal="Cadastro"
                 secundario="Tela de Cadastro do Produto"
         <Botao/> 
-        />*/}
         <Contador initial={100} step={30}/>
         <Contador />
+        />*/}
+        <Pai/>
     </View>
 
 )
