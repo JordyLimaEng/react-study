@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { StyleSheet, SafeAreaView } from 'react-native'
 
 // import C1 from './components/Primeiro'
 // import CompOriginal, { Comp1, Comp2 } from './components/Multi'
@@ -10,11 +10,12 @@ import { View, StyleSheet } from 'react-native'
 // import Pai from './components/indireta/Pai'
 // import ContadorV2 from './components/contador/ContadorV2'
 import Diferenciar from './components/Diferenciar'
+import Parimpar from './components/Parimpar'
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
     //também podemos exportar como arrow function
-    <View style={style.App}>
+    <SafeAreaView style={style.App}>
         {/* <C1/>
         <Comp1/>
         <Comp2/>
@@ -30,7 +31,8 @@ export default () => (
         <ContadorV2/>
         />*/}
         <Diferenciar/>
-   </View>
+        <Parimpar num={2}/>
+   </SafeAreaView>
 
 )
 
