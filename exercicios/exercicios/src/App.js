@@ -23,6 +23,7 @@ export default () => (
         <Botao/> 
         />*/}
         <Contador initial={100} step={30}/>
+        <Contador />
     </View>
 
 )

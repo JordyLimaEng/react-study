@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Text, Button } from 'react-native';
 import style from "./style";
 
-export default props => {
-    const [numero, setNumero] = useState(props.initial); 
+export default ({initial = 100, step = 1}) => {
+    const [numero, setNumero] = useState(initial); 
 
-    const inc = () => setNumero(numero + props.step);
-    const dec = () => setNumero(numero - props.step);
+    const inc = () => setNumero(numero + step);
+    const dec = () => setNumero(numero - step);
 
     return (
         <>
