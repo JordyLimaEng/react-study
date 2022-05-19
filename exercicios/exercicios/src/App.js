@@ -1,13 +1,14 @@
 import React from 'react'
 import { StyleSheet, SafeAreaView } from 'react-native'
 import DigiteSeuNome from './components/DigiteSeuNome'
+import FlexboxV1 from './components/FlexboxV1'
 
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
     //também podemos exportar como arrow function
     <SafeAreaView style={style.App}>
-        <DigiteSeuNome/>
+        <FlexboxV1/>
     </SafeAreaView>
 
 )
@@ -15,7 +16,7 @@ export default () => (
 const style = StyleSheet.create({
     App: {
         // em react-native o eixo principal é o Y
-        flexGrow: 0.5,
+        flexGrow: 1,
         justifyContent: 'center',
         alignItems: 'center',
         padding: 20
