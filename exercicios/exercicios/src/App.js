@@ -6,6 +6,7 @@ import { View, StyleSheet } from 'react-native'
 // import MinMax from './components/MinMax'
 // import Titulo from './components/Titulo'
 import Botao from './components/Botao'
+import Contador from './components/Contador'
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
@@ -19,10 +20,9 @@ export default () => (
         <MinMax n1={15} n2={30}/> 
         <Titulo principal="Cadastro"
                 secundario="Tela de Cadastro do Produto"
+        <Botao/> 
         />*/}
-        <Botao>
-            
-        </Botao>
+        <Contador initial={100} step={30}/>
     </View>
 
 )
