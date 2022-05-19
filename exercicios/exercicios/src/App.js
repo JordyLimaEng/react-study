@@ -5,9 +5,10 @@ import { View, StyleSheet } from 'react-native'
 // import CompOriginal, { Comp1, Comp2 } from './components/Multi'
 // import MinMax from './components/MinMax'
 // import Titulo from './components/Titulo'
-import Botao from './components/Botao'
-import Contador from './components/Contador'
-import Pai from './components/indireta/Pai'
+// import Botao from './components/Botao'
+// import Contador from './components/Contador'
+// import Pai from './components/indireta/Pai'
+import ContadorV2 from './components/contador/ContadorV2'
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
@@ -24,9 +25,10 @@ export default () => (
         <Botao/> 
         <Contador initial={100} step={30}/>
         <Contador />
-        />*/}
         <Pai/>
-    </View>
+        />*/}
+        <ContadorV2/>
+   </View>
 
 )
 

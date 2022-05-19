@@ -12,7 +12,9 @@ export default props => {
 
     return(
         <>
-            <Text>{num}</Text>
+            <Text>
+                {num}
+            </Text>
             <Filho
             min={1} 
             max={60}
