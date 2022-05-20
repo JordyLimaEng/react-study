@@ -7,7 +7,7 @@ export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
     //também podemos exportar como arrow function
     <SafeAreaView style={style.App}>
-        <Mega/>
+        <Mega qtdNumeros={7}/>
     </SafeAreaView>
 
 )
