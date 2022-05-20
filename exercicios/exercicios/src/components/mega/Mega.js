@@ -1,15 +1,29 @@
 import React, { Component } from 'react'
-import { Text, TextInput } from 'react-native'
+import { Button, Text, TextInput } from 'react-native'
 import style from '../style'
 
 export default class Mega extends Component {
 
     state = {
-        qtdNumeros: this.props.qtdNumeros
+        qtdNumeros: this.props.qtdNumeros,
+        numeros: []
     }
 
     alterarQtdeNumero(qtd) {
-        this.setState({ qtdNumeros: qtd })
+        this.setState({ qtdNumeros: +qtd })
+    }
+
+    gerarNumeroNaoContido = nums => {
+        const novo = parseInt(Math.random() * 60) + 1
+        return nums.includes(novo) ? this.gerarNumeroNaoContido(nums) : novo
+    }
+
+    gerarNumeros = () => {
+        const numeros = Array(this.state.qtdNumeros)
+            .fill()
+            .reduce(nums => [...nums, this.gerarNumeroNaoContido(nums)], [])
+            .sort((a, b) => a - b)
+        this.setState({ numeros })
     }
 
     render() {
@@ -22,9 +36,15 @@ export default class Mega extends Component {
                     keyboardType={'numeric'}
                     style={{ borderBottomWidth: 1 }}
                     placeholder='Qtde de numeros'
-                    value={this.state.qtdNumeros}
+                    value={`${this.state.qtdNumeros}`}
                     onChangeText={qtd => this.alterarQtdeNumero(qtd)}
                 />
+                <Button title='Gerar' onPress={this.gerarNumeros}>
+
+                </Button>
+                <Text>
+                    {this.state.numeros.join(',')}
+                </Text>
             </>
         )
     }
