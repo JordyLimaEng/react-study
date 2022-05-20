@@ -1,14 +1,13 @@
 import React from 'react'
 import { StyleSheet, SafeAreaView } from 'react-native'
-import DigiteSeuNome from './components/DigiteSeuNome'
-import FlexboxV4 from './components/FlexboxV4'
+import Mega from './components/mega/Mega'
 
 
 export default () => (
     //retorna por jsx - sempre precisa do modulo React pra retornar jsx
     //também podemos exportar como arrow function
     <SafeAreaView style={style.App}>
-        <FlexboxV4/>
+        <Mega/>
     </SafeAreaView>
 
 )
