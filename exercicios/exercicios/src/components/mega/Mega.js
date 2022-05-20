@@ -30,7 +30,7 @@ export default class Mega extends Component {
     exibirNumeros = () => {
         const nums = this.state.numeros
         return nums.map(num => {
-            return <Numero num={num} />
+            return <Numero key={num} num={num} />
         })
     }
 
