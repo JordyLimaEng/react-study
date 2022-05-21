@@ -1,4 +1,4 @@
-# Calculator Project
+# Mines Field Project
 Created and implemented while coursing the udemy course from COD3R, in react native
 
 
