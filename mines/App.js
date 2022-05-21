@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
   View,
   Text
@@ -14,13 +13,18 @@ export default class App extends Component {
 
   render() {
     return (
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <Text >Starting Mines!</Text>
         <Text >Size of the grid:
           {params.getRowsAmount()}x{params.getColumnsAmount()}
           <Field></Field>
+          <Field opened></Field>
+          <Field opened nearMines={1}></Field>
+          <Field opened nearMines={2}></Field>
+          <Field opened nearMines={3}></Field>
+          <Field opened nearMines={6}></Field>
         </Text>
-      </SafeAreaView>
+      </View>
     );
   }
 }
@@ -29,7 +33,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
   },
   buttons: {
     flexDirection: 'row',
