@@ -5,6 +5,7 @@ import {
   View,
   Text
 } from 'react-native';
+import Field from './src/components/Field';
 import params from './src/params';
 
 
@@ -17,6 +18,7 @@ export default class App extends Component {
         <Text >Starting Mines!</Text>
         <Text >Size of the grid:
           {params.getRowsAmount()}x{params.getColumnsAmount()}
+          <Field></Field>
         </Text>
       </SafeAreaView>
     );
