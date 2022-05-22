@@ -17,16 +17,18 @@ export default class App extends Component {
         <Text >Starting Mines!</Text>
         <Text >Size of the grid:
           {params.getRowsAmount()}x{params.getColumnsAmount()}
-          <Field></Field>
-          <Field opened></Field>
-          <Field opened nearMines={1}></Field>
-          <Field opened nearMines={2}></Field>
-          <Field opened nearMines={3}></Field>
-          <Field opened nearMines={6}></Field>
-          <Field mined />
-          <Field mined opened/>
-          <Field mined opened exploded/>
         </Text>
+        <Field></Field>
+        <Field opened></Field>
+        <Field opened nearMines={1}></Field>
+        <Field opened nearMines={2}></Field>
+        <Field opened nearMines={3}></Field>
+        <Field opened nearMines={6}></Field>
+        <Field mined />
+        <Field mined opened />
+        <Field mined opened exploded />
+        <Field flagged />
+        <Field flagged opened />
       </View>
     );
   }
@@ -38,6 +40,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-    flexDirection: 'column',
+    flexDirection: 'column'
   },
 });
