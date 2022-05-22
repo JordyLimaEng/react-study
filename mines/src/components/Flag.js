@@ -8,7 +8,6 @@ export default props => {
             <View style={[styles.flag, props.bigger ? styles.flagBigger : null]} />
             <View style={[styles.base1, props.bigger ? styles.base1Bigger : null]} />
             <View style={[styles.base2, props.bigger ? styles.base2Bigger : null]} />
-
         </View>
     )
 }
