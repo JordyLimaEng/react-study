@@ -26,11 +26,11 @@ export default props => {
                     </StepStack>
                 )}
             </Stack.Screen>
-            <Stack.Screen name='ScreenC'
+            <Stack.Screen name='ScreenC' //name param is the routeName
                 options={{ title: 'Screen C is now live', headerShown: false }}>
                 {props => (
                     <StepStack {...props} back advance='ScreenC'>
-                        <ScreenC />
+                        <ScreenC {...props} />
                     </StepStack>
                 )}
             </Stack.Screen>
