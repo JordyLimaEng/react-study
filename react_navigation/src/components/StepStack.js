@@ -8,8 +8,8 @@ export default props => (
                 ? <Button title='back' onPress={() => {props.navigation.goBack()}}/>
                 : false
             }
-            {props.advance
-                ? <Button title='Advance' onPress={() => {props.navigation.navigate(props.advance)}}/>
+            {props.advance //Using Push, we can add multiple times a same screen on the stack of screens
+                ? <Button title='Advance' onPress={() => {props.navigation.push(props.advance)}}/>
                 : false
             }
         </View>

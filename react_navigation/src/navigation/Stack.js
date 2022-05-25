@@ -29,8 +29,8 @@ export default props => {
             <Stack.Screen name='ScreenC'
                 options={{ title: 'Screen C is now live', headerShown: false }}>
                 {props => (
-                    <StepStack {...props} back>
-                        <ScreenB />
+                    <StepStack {...props} back advance='ScreenC'>
+                        <ScreenC />
                     </StepStack>
                 )}
             </Stack.Screen>
